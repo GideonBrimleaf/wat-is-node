@@ -1,4 +1,4 @@
-## WAT IS NODE!?
+# WAT IS NODE!?
 A starter app using ExpressJS and Tailwind CSS
 
 ## Dependencies
@@ -7,7 +7,7 @@ Node.js ~10.16.2
 npm ~6.9.0
 PostCSS ~7.1.0
 
-# How to get an Express.js app set up
+## How to get an Express.js app set up
 
 As per the [Express JS docs](https://expressjs.com/en/starter/generator.html)
 you can get started quickly with the following (passing in whichever view format
@@ -15,17 +15,16 @@ you would like for your app - EJS here is the example). This will create the
 directory for your app as well as the required subdirectories
 
 ```
-$ mkdir my-awesome-app
-$ cd my-awesome-app
-$ npx express-generator --view=ejs
+$ npx express-generator my-awesome-app --view=ejs
 ```
 
-# How to get Tailwind CSS installed
+## How to get Tailwind CSS installed
 
 [Surf Code Repeat](https://surfcoderepeat.com/express-tailwind) has a great blog
 on this but I've made a few tweaks:
 
 ```
+$ cd my-awesome-app
 $ npm install tailwindcss
 $ npx tailwind init
 ```
@@ -34,7 +33,7 @@ This will create a tailwind.config.js file in your route.  You need to rename th
 to tailwind.js. You may also need to run `npm update` to ensure that your package-lock.json
 file is updated to include the dependencies for Tailwind.
 
-# Setup PostCSS for Tailwind
+## Setup PostCSS for Tailwind
 
 In the root of your directory
 
@@ -55,7 +54,7 @@ module.exports = {
 }
 ```
 
-# Create a Tailwind CSS file in your project
+## Create a Tailwind CSS file in your project
 
 This file can be called whatever you like but be sure to adjust the later
 commands to refer to the name of your css file:
@@ -74,7 +73,7 @@ add the following:
 ```
 
 
-# Add a script to the package.json file
+## Add a script to the package.json file
 
 There will already be a script in your package.json file so the following should
 replace all of the exisitng entry:
