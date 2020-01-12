@@ -29,9 +29,10 @@ $ npm install tailwindcss
 $ npx tailwind init
 ```
 
-This will create a tailwind.config.js file in your route.  You need to rename this
-to tailwind.js. You may also need to run `npm update` to ensure that your package-lock.json
-file is updated to include the dependencies for Tailwind.
+This will create a tailwind.config.js file in your route which will be referred
+to in your postcss file (next step). You may also need to run `npm update` to 
+ensure that your package-lock.json file is updated to include the dependencies 
+for Tailwind.
 
 ## Setup PostCSS for Tailwind
 
@@ -44,11 +45,9 @@ $ touch postcss.config.js
 Open up the newly created file and fill it with the following
 
 ```
-const tailwindcss = require('tailwindcss')
-
 module.exports = {
   "plugins": [
-    require('tailwindcss')('tailwind.js'),
+    require('tailwindcss'),
     require('autoprefixer')(),
   ]
 }
