@@ -3,9 +3,9 @@ A starter app using ExpressJS and Tailwind CSS
 
 ## Dependencies
 
-Node.js ~10.16.2
-npm ~6.9.0
-PostCSS ~7.1.0
+* Node.js ~10.16.2
+* npm ~6.9.0
+* PostCSS ~7.1.0
 
 ## How to get an Express.js app set up
 
