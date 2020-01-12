@@ -36,13 +36,13 @@ for Tailwind.
 
 ## Setup PostCSS for Tailwind
 
-In the root of your directory
+In the root of your directory:
 
 ```
 $ touch postcss.config.js
 ```
 
-Open up the newly created file and fill it with the following
+Open up the newly created file and fill it with the following:
 
 ```
 module.exports = {
@@ -75,7 +75,7 @@ add the following:
 ## Add a script to the package.json file
 
 There will already be a script in your package.json file so the following should
-replace all of the exisitng entry:
+replace all of the existing entry:
 
 ```
 "scripts": {
